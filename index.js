@@ -15,6 +15,7 @@ const simpleArraySum = require('./algorithms/simpleArraySum')
 const solveMeFirst = require('./algorithms/solveMeFirst')
 const superReducedString = require('./algorithms/superReducedString')
 const diagonalDifference = require('./algorithms/diagonalDifference')
+const plusMinus = require('./algorithms/plusMinus')
 
 assert.deepEqual(solveMeFirst(2, 3), 5)
 assert.deepEqual(simpleArraySum([1, 2, 3, 4, 10, 11]), 31)
@@ -27,6 +28,7 @@ assert.deepEqual(insertionSort([7, 4, 3, 5, 6, 2]), [2, 3, 4, 5, 6, 7])
 assert.deepEqual(runningTime([2, 1, 3, 1, 2]), 4)
 assert.deepEqual(findMedian([0, 1, 2, 4, 6, 5, 3]), 3)
 assert.deepEqual(diagonalDifference([[1, 2, 3],[4, 5, 6],[9, 8, 9]]), 2)
+
 
 let arr = [1, 2, 3] // NO
 // let arr = [2, 0, 0, 0] //YES >> In the second case, arr[0] = 2 is between two subarrays summing to 0.
@@ -56,3 +58,12 @@ console.log('<<< insertionSort2 output >>>')
     // 1 3 4 5 6 2 
     // 1 2 3 4 5 6
 insertionSort2(6, [1, 4, 3, 5, 6, 2])
+
+console.log('<<< PlusMinus output >>>')
+// PlusMinus should print out the results:
+// Input: 5, [0, 0, -1, 1, 1]
+// Output:
+    // 0.400000
+    // 0.200000
+    // 0.400000
+plusMinus([0, 0, -1, 1, 1])
