@@ -18,6 +18,7 @@ const diagonalDifference = require('./algorithms/diagonalDifference')
 const plusMinus = require('./algorithms/plusMinus')
 const timeConversion = require('./algorithms/timeConversion')
 const birthdayCakeCandles = require('./algorithms/birthdayCakeCandles')
+const maxMinSum = require('./algorithms/maxMinSum')
 
 assert.deepEqual(solveMeFirst(2, 3), 5)
 assert.deepEqual(simpleArraySum([1, 2, 3, 4, 10, 11]), 31)
@@ -71,3 +72,11 @@ console.log('<<< PlusMinus output >>>')
     // 0.200000
     // 0.400000
 plusMinus([0, 0, -1, 1, 1])
+
+console.log('<<< maxMinSum output >>>')
+// MaxMinSum should print out the results:
+// Input: [1, 2, 3, 4, 5]
+// Output: 
+    // 10 14
+
+maxMinSum([1, 2, 3, 4, 5])
