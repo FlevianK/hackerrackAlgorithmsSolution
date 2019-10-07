@@ -19,6 +19,7 @@ const plusMinus = require('./algorithms/plusMinus')
 const timeConversion = require('./algorithms/timeConversion')
 const birthdayCakeCandles = require('./algorithms/birthdayCakeCandles')
 const maxMinSum = require('./algorithms/maxMinSum')
+const staircase = require('./algorithms/staircase')
 
 assert.deepEqual(solveMeFirst(2, 3), 5)
 assert.deepEqual(simpleArraySum([1, 2, 3, 4, 10, 11]), 31)
@@ -80,3 +81,13 @@ console.log('<<< maxMinSum output >>>')
     // 10 14
 
 maxMinSum([1, 2, 3, 4, 5])
+
+console.log('<<< staircase output >>>')
+// staircase should print out the results:
+// Input: 4
+// Output: 
+//     #
+//    ##
+//   ###
+//  ####
+staircase(4)
