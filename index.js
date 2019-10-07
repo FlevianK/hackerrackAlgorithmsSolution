@@ -18,7 +18,7 @@ const diagonalDifference = require('./algorithms/diagonalDifference')
 const plusMinus = require('./algorithms/plusMinus')
 const timeConversion = require('./algorithms/timeConversion')
 const birthdayCakeCandles = require('./algorithms/birthdayCakeCandles')
-const maxMinSum = require('./algorithms/maxMinSum')
+const miniMaxSum = require('./algorithms/miniMaxSum')
 const staircase = require('./algorithms/staircase')
 
 assert.deepEqual(solveMeFirst(2, 3), 5)
@@ -74,13 +74,12 @@ console.log('<<< PlusMinus output >>>')
     // 0.400000
 plusMinus([0, 0, -1, 1, 1])
 
-console.log('<<< maxMinSum output >>>')
-// MaxMinSum should print out the results:
+console.log('<<< miniMaxSum output >>>')
+// miniMaxSum should print out the results:
 // Input: [1, 2, 3, 4, 5]
 // Output: 
     // 10 14
-
-maxMinSum([1, 2, 3, 4, 5])
+miniMaxSum([1, 2, 3, 4, 5])
 
 console.log('<<< staircase output >>>')
 // staircase should print out the results:
