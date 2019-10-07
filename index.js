@@ -17,6 +17,7 @@ const superReducedString = require('./algorithms/superReducedString')
 const diagonalDifference = require('./algorithms/diagonalDifference')
 const plusMinus = require('./algorithms/plusMinus')
 const timeConversion = require('./algorithms/timeConversion')
+const birthdayCakeCandles = require('./algorithms/birthdayCakeCandles')
 
 assert.deepEqual(solveMeFirst(2, 3), 5)
 assert.deepEqual(simpleArraySum([1, 2, 3, 4, 10, 11]), 31)
@@ -30,6 +31,7 @@ assert.deepEqual(runningTime([2, 1, 3, 1, 2]), 4)
 assert.deepEqual(findMedian([0, 1, 2, 4, 6, 5, 3]), 3)
 assert.deepEqual(diagonalDifference([[1, 2, 3],[4, 5, 6],[9, 8, 9]]), 2)
 assert.deepEqual(timeConversion('12:00:00AM'), '00:00:00')
+assert.deepEqual(birthdayCakeCandles([3, 4, 3, 3]), 1)
 
 
 let arr = [1, 2, 3] // NO
